@@ -12,3 +12,12 @@ class Bullets:
         self.bullet.setposition(x, y)
     def get(self):
         return self.bullet
+    def setAngle(self,x,y,angle):
+        self.bullet.setposition(x, y)
+        self.bullet.left(angle)
+    def getAngle(self):
+        return self.bullet.heading()
+    def hide(self):
+        self.bullet.hideturtle()
+    def show(self):
+        self.bullet.showturtle()
